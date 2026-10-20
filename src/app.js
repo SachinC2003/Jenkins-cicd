@@ -22,4 +22,11 @@ app.get("/version", (req, res) => {
   });
 });
 
+app.get("/info", (req, res) => {
+  res.status(200).json({
+    name: "DevOps Jenkins API",
+    description: "A simple API for DevOps and Jenkins integration", 
+  });
+});
+
 module.exports = app;
