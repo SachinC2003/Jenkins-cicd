@@ -21,7 +21,7 @@ pipeline {
 
     post {
         success {
-            echo 'CI pipeline completed successfully.'
+            echo 'CI Pipeline completed successfully! Version 2'
         }
         failure {
             echo 'CI pipeline failed.'
