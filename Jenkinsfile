@@ -17,6 +17,12 @@ pipeline {
                 sh 'npm test'
             }
         }
+
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t devops-node-api:latest .'
+            }
+        }
     }
 
     post {
